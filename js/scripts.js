@@ -28,6 +28,8 @@ fetch(url)
             <blockquote> ${student.motto} </blockquote>
             <p><span class="label">My superpower:</span> ${student.talent} </p>
             <p><span class="label">Ask me to sing:</span> ${student.favoriteSong} </p>
+            <p><span class="label">Fav emoji:</span> ${student.status} </p>
+            <p><span class="label">Fav color:</span> ${student.favoriteColor} </p>
           </figure>
        `;
 
