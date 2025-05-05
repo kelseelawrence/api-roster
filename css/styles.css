@@ -18,13 +18,13 @@ body {
   
   /* Student card */
   figure {
-    background-color: #d8a7b1;
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    text-align: left;
-    transition: transform 0.3s ease;
-  }
+        background: linear-gradient(135deg, #d8a7b1, #fae8e0);
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: left;
+      }
+
   
   /* Hover effect */
   figure:hover {
@@ -47,12 +47,13 @@ body {
     object-fit: cover;
     object-position: top;
     display: block;
+    border: 4px solid #fae8e0;
     border-radius: 0.5rem;
     margin: 0 auto;
   }
   
   .label {
-    font-weight: bold;
+    font-weight: bolder;
   }
   
   figure p {
@@ -74,6 +75,15 @@ body {
   @media (max-width: 600px) {
     main.roster {
       grid-template-columns: 1fr;
+      gap: 1rem;
     }
+    figure {
+        padding: 0.5rem;
+      }
+    
+      figure img {
+        width: 100%;
+        height: auto;
+      }
   }
   
