@@ -1,7 +1,7 @@
 // Scripting
 
 // Data source
-const url = "https://assets.codepen.io/16425/web-3-spring-2024-roster.json";
+const url = "https://assets.codepen.io/16425/Spring-2025-Roster.json";
 
 // Get data
 fetch(url)
@@ -10,8 +10,9 @@ fetch(url)
     
     // check-check: is the data good?
     console.log(data);
-    console.log(data.Name);
-    console.log(data.Image);
+    //console.log(data[0].name);
+    // console.log(data.imageURL);
+    // console.log(data.motto);
 
     // get container for data
     const roster = document.querySelector(".roster");
@@ -22,8 +23,11 @@ fetch(url)
       // template
       const template = `
           <figure>
-            <figcaption> ${student.Name} </figcaption>
-            <img src=" ${student.Image} " alt=" ${student.Name} ">
+            <figcaption> ${student.name} </figcaption>
+            <img src=${student.imageUrl} alt=${student.name} >
+            <blockquote> ${student.motto} </blockquote>
+            <p class="superpower"> My superpower: ${student.talent} </p>
+            <p>Ask me to sing: ${student.favoriteSong} </p>
           </figure>
        `;
 
@@ -31,3 +35,4 @@ fetch(url)
       roster.insertAdjacentHTML("afterbegin", template);
     });
   });
+
