@@ -26,8 +26,8 @@ fetch(url)
             <figcaption> ${student.name} </figcaption>
             <img src=${student.imageUrl} alt=${student.name} >
             <blockquote> ${student.motto} </blockquote>
-            <p class="superpower"> My superpower: ${student.talent} </p>
-            <p>Ask me to sing: ${student.favoriteSong} </p>
+            <p><span class="label">My superpower:</span> ${student.talent} </p>
+            <p><span class="label">Ask me to sing:</span> ${student.favoriteSong} </p>
           </figure>
        `;
 
